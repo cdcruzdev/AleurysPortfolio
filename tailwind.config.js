@@ -12,8 +12,8 @@ module.exports = {
         paragraph: '#E2DCCB',
       },
       fontFamily: {
-        heading: ['MuseoModerno', 'sans-serif'],
-        paragraph: ['Ubuntu Mono', 'monospace'],
+        heading: ['Philosopher', 'sans-serif'],
+        paragraph: ['Philosopher', 'sans-serif'],
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -23,7 +23,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-background": "url('/src/assets/herobg.png')",
-        "hero-side-bg": "url('/src/assets/hero-side-bg.png')",
+        "side-bg": "url('/src/assets/hero-side-bg.png')",
       },
     },
   },
