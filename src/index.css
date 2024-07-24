@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+.hero-image {
+    @apply relative bg-no-repeat bg-cover bg-center;
+    background-image: url('/src/assets/hero-bg.png');
+}
+
+.hero-image::before {
+    content: "";
+    @apply absolute inset-0;
+    @apply bg-no-repeat bg-cover bg-center;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay with 50% opacity */
+    z-index: -1;
+}
+
+.about-image {
+    @apply relative bg-no-repeat bg-cover bg-center;
+    background-image: url('/src/assets/about-bg.png');
+}
+
+.about-image::before {
+    content: "";
+    @apply absolute inset-0;
+    @apply bg-no-repeat bg-cover bg-center;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay with 50% opacity */
+    z-index: -1;
+}
+
+.side-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.87); /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
